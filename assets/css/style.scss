@@ -1,0 +1,20 @@
+// Import bootstrap from bower components
+@import '../components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+// This is for testing hammer setup. Remove it and add your styles bellow
+// START Grid Test Styles
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+// END Grid Test Styles

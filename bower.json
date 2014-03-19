@@ -1,0 +1,7 @@
+{
+  "name": "HammerStarter",
+  "dependencies": {
+    "jquery": "~1.11.*",
+    "bootstrap-sass-official": "~3.1.1"
+  }
+}

@@ -1,0 +1,8 @@
+/* TEAM */
+Designer/UX: Chris O'Brien
+Twitter: @ThatChrisOBrien
+Location: Cape Cod, MA, USA
+
+Developer: Rodrigo Passos
+Twitter: @webrgp
+Location: Cape Cod, MA, USA
