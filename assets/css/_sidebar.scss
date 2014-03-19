@@ -1,0 +1,53 @@
+
+.sidebar-box {
+  border: solid 1px #cacaca;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.main-sidebar {
+
+}
+
+.notify-me-form {
+  @extend .sidebar-box;
+}
+
+.quick-links {
+  @extend .sidebar-box;
+}
+
+.sponsors-box {
+  
+  @extend .sidebar-box;
+  
+  header {
+    h1 {
+      margin: 0px 0px 10px;
+      font-size: 18px;
+      text-align: center;
+      color: $orange;
+    }
+  }
+
+  > .row {
+    margin: 10px 0px;
+
+    .sponsor-cell {
+      display: block;
+      height: 50px;
+      position: relative;
+
+      > img {
+        position: absolute;
+        margin: auto;
+        top: 0; bottom: 0; left: 0; right: 0;
+        max-width: 80%;
+      }
+    }
+  }
+
+  span {
+    display: none;
+  }
+}
