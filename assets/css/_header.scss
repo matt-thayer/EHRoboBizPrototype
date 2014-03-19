@@ -1,0 +1,25 @@
+// Site Master Header
+
+.master-header {
+  background-color: $silver;
+
+  .container {
+    background-image: url("layout/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .logo {
+    
+    display: block;
+    width: 337px;
+    height: 63px;
+    background-image: url("layout/robo-logo.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    h1 { display: none; }
+
+  }
+
+}
