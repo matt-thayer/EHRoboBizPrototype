@@ -6,6 +6,17 @@
 }
 
 .main-sidebar {
+  
+  section {
+    header {
+      h1 {
+        line-height: 1.3em;
+        margin: 0px 0px 10px;
+        font-size: 16px;
+        color: $orange;
+      }
+    }
+  }
 
 }
 
@@ -20,15 +31,6 @@
 .sponsors-box {
   
   @extend .sidebar-box;
-  
-  header {
-    h1 {
-      margin: 0px 0px 10px;
-      font-size: 18px;
-      text-align: center;
-      color: $orange;
-    }
-  }
 
   > .row {
     margin: 10px 0px;
