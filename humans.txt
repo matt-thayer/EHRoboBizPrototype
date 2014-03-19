@@ -1,8 +1,10 @@
 /* TEAM */
 Designer/UX: Chris O'Brien
+Url: http://hellodative.com
 Twitter: @ThatChrisOBrien
 Location: Cape Cod, MA, USA
 
 Developer: Rodrigo Passos
+Url: http://hellodative.com
 Twitter: @webrgp
 Location: Cape Cod, MA, USA
