@@ -1,8 +1,14 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
 }
 
 [role="content"] {
   margin-bottom: 40px;
+}
+
+// Danger and error appear as red
+.btn-orange {
+  @include button-variant($white, $orange, $orange);
 }
