@@ -1,12 +1,20 @@
 // Site Master Header
 
+$header-bg-width: 624;
+
 .master-header {
   background-color: $silver;
 
   .container {
     background-image: url("layout/header-bg.png");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-size: auto;
+    
+    background-position: ($screen-lg - $header-bg-width - 85) 10px;
+
+    > .row {
+      height: 239px;
+    }
   }
 
   .logo {
@@ -17,9 +25,56 @@
     background-image: url("layout/robo-logo.png");
     background-repeat: no-repeat;
     background-position: left top;
+    margin: 37px 26px 26px;
 
     h1 { display: none; }
 
+  }
+
+  .conference-info {
+
+    margin-left: 53px;
+
+    dt {
+      display: none;
+    }
+
+    dd {
+
+      time {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      span[itemprop="location"] {
+        span[itemprop="street-address"] {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+  .social {
+    color: $orange;
+    float: right;
+    margin-top: 10px;
+    span { display: none; }
+  }
+
+  @media screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+    .container { background-position: ($screen-lg - $header-bg-width - 285) 10px; }
+  }
+
+  @media screen and (max-width: $screen-md) {
+    .container { 
+      background-position: 50% 110px; 
+
+      > .row {
+        height: 340px;
+      }
+    }
   }
 
 }
