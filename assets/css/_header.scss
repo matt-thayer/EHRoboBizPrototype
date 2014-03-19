@@ -65,17 +65,17 @@ $header-bg-width: 624px;
   }
 
   @media screen and (min-width: $screen-md) and (max-width: $screen-lg) {
-    .container { 
-      background-position: ($screen-lg - $header-bg-width - 285) 10px; 
+    .container {
+      background-position: ($screen-lg - $header-bg-width - 285) 10px;
     }
   }
 
   @media screen and (max-width: $screen-md) {
-    .container { 
-      background-position: 50% 110px; 
+    .container {
+      background-image: none;
 
       > .row {
-        height: 340px;
+        height: 200px;
       }
     }
 
@@ -94,9 +94,9 @@ $header-bg-width: 624px;
 
   @media screen and (max-width: $screen-sm) {
 
-    .container { 
+    .container {
       background-position: 50% 95%;
-      background-size: 85%; 
+      background-size: 85%;
     }
 
     .logo {

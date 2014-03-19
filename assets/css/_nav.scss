@@ -23,11 +23,13 @@
     }
   }
 
+
+
   @media screen and (min-width: $screen-sm) {
     .dropdown:hover {
-      .dropdown-menu {
+      > .dropdown-menu {
         display: block;
       }
     }
-  }  
+  }
 }
