@@ -26,13 +26,18 @@ body {
     color: $orange;
   }
 
+  h5 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $orange;
+  }
+
   img {
     display: block;
     max-width: 100%;
     height: auto;
   }
-
-
 }
 
 // Danger and error appear as red
@@ -58,5 +63,14 @@ body {
 
   > .last {
     color: $black;
+  }
+}
+
+// ex_contact.html template styling
+.eh_contacts {
+  margin-top: 50px;
+
+  .contact-cell {
+    margin-bottom: 20px;
   }
 }
