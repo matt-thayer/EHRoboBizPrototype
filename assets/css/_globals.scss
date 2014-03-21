@@ -6,9 +6,57 @@ body {
 
 [role="content"] {
   margin-bottom: 40px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: $orange;
+    line-height: 32px;
+    margin: 0px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: $orange;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
 }
 
 // Danger and error appear as red
 .btn-orange {
   @include button-variant($white, $orange, $orange);
+}
+
+// Custom Breadcrumb
+.breadcrumb {
+
+  $breadcrumb-separator: ">";
+
+  padding: 8px 0px;
+  background-color: transparent;
+
+  > li {
+    + li:before {
+      content: "#{$breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 5px 0 8px;
+      color: $black;
+    }
+  }
+
+  > .last {
+    color: $black;
+  }
 }
