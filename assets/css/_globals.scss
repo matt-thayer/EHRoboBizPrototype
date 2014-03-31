@@ -33,6 +33,12 @@ body {
     color: $orange;
   }
 
+  h6 {
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-weight: bold;
+  }
+
   img {
     display: block;
     max-width: 100%;
