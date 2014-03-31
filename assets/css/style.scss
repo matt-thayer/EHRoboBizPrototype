@@ -1,7 +1,8 @@
 // Import bootstrap from bower components
+@import "variables";
+
 @import '../components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
-@import "variables";
 @import "globals";
 @import "header";
 @import "footer";
@@ -9,3 +10,4 @@
 @import "sidebar";
 @import "sponsors";
 @import "sessions";
+@import "speakers";
