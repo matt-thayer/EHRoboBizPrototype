@@ -1,0 +1,29 @@
+
+/* Fade transition for carousel items */
+#carousel-homepage.carousel  {
+  
+  margin-bottom: 20px;
+
+  .item {
+    left: 0 !important;
+    @include prefixer(transition, opacity .4s, webkit moz o spec)
+  }
+
+  .carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+  }
+
+  /* Fade controls with items */
+  .next.left,
+  .prev.right {
+      opacity: 1;
+      z-index: 1;
+  }
+
+
+  .active.left,
+  .active.right {
+      opacity: 0;
+      z-index: 2;
+  }
+}
