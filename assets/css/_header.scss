@@ -3,37 +3,23 @@
 $header-bg-width: 624px;
 
 .master-header {
-  background-color: $silver;
+
+  //
+  //
+  @include linear-gradient(#2e3d8b, #000562);
+  color: $white;
 
   .container {
-    background-image: url("layout/header-bg.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    
-    background-position: ($screen-lg - $header-bg-width - 85) 10px;
 
-    > .row {
-      height: 239px;
-    }
   }
 
   .logo {
-    
-    display: block;
-    width: 337px;
-    height: 63px;
-    background-image: url("layout/robo-logo.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-    margin: 37px 26px 26px;
 
     h1 { display: none; }
 
   }
 
   .conference-info {
-
-    margin-left: 53px;
 
     dt {
       display: none;
@@ -58,56 +44,21 @@ $header-bg-width: 624px;
 
   .social {
     color: $orange;
-    float: right;
     margin-top: 10px;
     font-size: 14px;
     span { display: none; }
   }
 
   @media screen and (min-width: $screen-md) and (max-width: $screen-lg) {
-    .container {
-      background-position: ($screen-lg - $header-bg-width - 285) 10px;
-    }
+
   }
 
   @media screen and (max-width: $screen-md) {
-    .container {
-      background-image: none;
 
-      > .row {
-        height: 200px;
-      }
-    }
-
-    .logo {
-      margin: 10px 0px;
-    }
-
-    .social {
-      // margin-top: 55px;
-    }
-
-    .conference-info {
-      margin-left: 0px;
-    }
   }
 
   @media screen and (max-width: $screen-sm) {
 
-    .container {
-      background-position: 50% 95%;
-      background-size: 85%;
-    }
-
-    .logo {
-      margin: 0px auto 10px;
-    }
-
-    .conference-info {
-      dd {
-        text-align: center;
-      }
-    }
   }
 
 }
